@@ -7,7 +7,7 @@
         <a href="{{ route('products.create') }}" class="btn btn-primary float-right">Crear Nuevo</a>
         <br><br>
         <table class="table table-bordered">
-            <thead class="table-light">
+            <thead class="table-dark">
                 <tr>
                     <th>ID</th>
                     <th>Name</th>
