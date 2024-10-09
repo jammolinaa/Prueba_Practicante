@@ -4,7 +4,7 @@
 <div class="container">
     <div class="container">
         <h1>Lista de Productos</h1>
-        <a href="{{ route('products.create') }}" class="btn btn-primary float-right">Crear Nuevo</a>
+        <a href="{{ route('productos.create') }}" class="btn btn-primary float-right">Crear Nuevo</a>
         <br><br>
         <table class="table table-bordered">
             <thead class="table-dark">
@@ -18,17 +18,17 @@
             <tbody>
                 @foreach ($products as $product)
                     <tr>
-                        <td>{{ $product->id }}</td>
-                        <td>{{ $product->name }}</td>
-                        <td>{{ $product->price }}</td>
+                        <td>{{ $producto->id }}</td>
+                        <td>{{ $producto->name }}</td>
+                        <td> ${{ $products->price }}</td>
                         <td>
-                            <a href="{{ route('products.edit', $product->id) }}" class="btn btn-sm btn-warning">Editar</a>
+                            <a href="{{ route('productos.edit', $product->id) }}" class="btn btn-sm btn-warning">Editar</a>
 
-                            <form action="{{ route('products.destroy', $product->id) }}" method="POST"
+                            <form action="{{ route('productos.destroy', $product->id) }}" method="POST"
                                 style="display:inline-block;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-sm btn-danger">Eliminar</button>
+                                <button type="Eliminar" class="btn btn-sm btn-danger">Eliminar</button>
                             </form>
                         </td>
                     </tr>

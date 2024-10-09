@@ -18,13 +18,13 @@
             @csrf
 
             <div class="form-group">
-                <label for="pastas">Pastas:</label>
-                <input type="text" class="form-control" id="pastas" name="pastas" value="{{ old('pastas') }}" required>
+                <label for="pasta">Pastas:</label>
+                <input type="text" class="form-control" id="pasta" name="pasta" value="{{ old('pasta') }}" required>
             </div>
 
             <div class="form-group">
-                <label for="granos"> Granos:</label>
-                <input class="form-control" id="granos" name="granos" rows="4">{{ old('granos') }}</input>
+                <label for="grano"> Granos:</label>
+                <input class="form-control" id="grano" name="grano" rows="4">{{ old('grano') }}</input>
             </div>
 
             <div class="form-group">

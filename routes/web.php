@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\CategoriasController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ProductsController;
+use app\Http\Controllers\ProductsController;
+// use App\Http\Controllers\CategoriasController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes

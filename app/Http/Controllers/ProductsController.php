@@ -43,13 +43,10 @@ class ProductsController extends Controller
      * Display the specified resource.
      */
 
-
-     public function edit(Products $product)
-    {
-        return view('products.edit', compact('product'));
-
-    }
-
+     public function edit(products $products)
+     {
+         return view('categorias.edit', compact('products'));
+     }
     public function update(Request $request, Products $product)
     {
         $request->validate([
@@ -57,7 +54,7 @@ class ProductsController extends Controller
             'price' => 'required',
         ]);
 
-        $product->update($request->all());
+        $product::create($request->all());
         return redirect()->route('products.index')->with('success', 'products actualizado con éxito');
     }
 

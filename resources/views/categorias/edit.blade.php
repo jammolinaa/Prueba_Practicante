@@ -19,13 +19,13 @@
 
             <div class="form-group">
                 <label for="pastas">Pastas:</label>
-                <input type="text" class="form-control" id="pastas" name="pastas"
+                <input type="text" class="form-control" id="pasta" name="pastsa"
                     value="{{ old('pastas', $categoria->pastas) }}" required>
             </div>
 
             <div class="form-group">
                 <label for="granos">Gramos:</label>
-                <input type="text" class="form-control" id="granos" name="granos"
+                <input type="text" class="form-control" id="gramos" name="granos"
                     value="{{ old('granos', $categoria->granos) }}" required>
             </div>
 

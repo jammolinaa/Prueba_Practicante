@@ -10,7 +10,7 @@ class categorias extends Model
     use HasFactory;
     protected $fillable = [
         'pastas',
-        'granos',
+        // 'granos',
         'harinas'
       ];
 }
